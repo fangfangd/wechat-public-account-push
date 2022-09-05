@@ -79,8 +79,9 @@ export const config = {
    */
   FESTIVALS: [
     {"type": "生日", "name": "胖胖", "year": "2002", "date": "11-09"},
+    
     {"type": "生日", "name": "亮亮", "year": "2002", "date": "01-01"},
-  
+   
   ],
 
   /**
@@ -99,7 +100,7 @@ export const config = {
   CUSTOMIZED_DATE_LIST: [
     // 在一起的日子
     {"keyword": "love_day", date: "2020-11-28"},
-   
+  
   ],
 
   /** 插槽 */
@@ -110,7 +111,7 @@ export const config = {
     * */
   SLOT_LIST: [
     // 这样配置的话，就会每次发送这句话
-  
+    {"keyword": "encourage_oneself", contents: "你主要的问题在于读书太少而想得太多"},
     // 这样配置的话，就会每次随机选一句话发送
     {"keyword": "lover_prattle", contents: [
       "因为太喜欢你，所以看谁都像是情敌。",
@@ -120,6 +121,11 @@ export const config = {
     ]},
   ],
 
-  
+  /** 每日一言 */
+
+  // 好文节选的内容类型
+  // 可以填写【动画，漫画，游戏，小说，原创，网络，其他】； 随机则填写 ""
+  LITERARY_PREFERENCE: ""
+
 
 }
